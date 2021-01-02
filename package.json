@@ -9,6 +9,8 @@
   "license": "CC0-1.0",
   "private": true,
   "scripts": {
-    "lint:all": "textlint *"
+    "lint:all": "textlint texts/*",
+    "fix:all": "textlint --fix texts/*",
+    "setup": "pnpm install & code --install-extension taichi.vscode-textlint"
   }
 }
